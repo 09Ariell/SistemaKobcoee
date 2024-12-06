@@ -1,0 +1,728 @@
+
+aside.hide-aside {
+    display: none; /* Oculta el aside si está vacío */
+}
+
+
+
+body {
+    justify-content: center;
+    align-content: center;
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    background: rgb(245, 245, 245); 
+}
+
+#container {
+    display: flex; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Contenedor del logo y el nombre */
+.logo-container {
+    display: flex;             
+    align-items: center;       
+    gap: 10px;  
+}
+
+/* Estilo del logo */
+.logo {
+    width: 50px;               
+    height: auto;
+}
+.gallery {
+    width: 100%; /* Asegura que ocupe todo el ancho */
+    max-width: none; /* Elimina restricciones de ancho */
+    padding: 20px; /* Opcional: Espacio interno */
+    display: flex; /* Flexbox para alinear las tarjetas */
+    flex-wrap: wrap; /* Permite que las tarjetas se ajusten automáticamente */
+    justify-content: space-between; /* Distribuye las tarjetas uniformemente */
+}
+
+#content {
+    flex: 1;
+    background: white;
+    min-height: 500px;
+    padding: 40px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    overflow: hidden; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('img/imagenfondo.jpg') no-repeat center center;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/imagenfondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    z-index: -1; 
+    opacity: 0.5; 
+}
+
+
+#nombreEsq {
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+
+nav {
+    position: sticky;
+    top: 0; /* Se mantiene en la parte superior al hacer scroll */
+    width: 100%;
+    background-color: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+    z-index: 10; /* Asegura que la navbar quede sobre otros elementos */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+    height: 60px;
+}
+
+.navbar .nav-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .nav-logo {
+    margin-left: 20px; 
+    cursor: pointer;
+}
+
+.navbar .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #007BFF; 
+}
+
+/* Estilo de la imagen del logo */
+.nav-logo {
+    height: 40px; /* Ajusta la altura para que no sea desproporcionada */
+    width: auto; /* Mantiene las proporciones de la imagen */
+    cursor: pointer; /* Indica que se puede hacer clic si es necesario */
+}
+
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: calc(80% - 80px);
+    background: white;
+    min-height: 500px;
+    padding: 40px;
+}
+
+aside {
+    width: 20%;
+    background: rgb(245, 245, 245);
+    padding: 10px;
+    height: auto;
+}
+
+
+#nombre {
+    font-family: serif;
+    text-decoration: underline;
+    font-size: 150px;
+    color: white;
+    text-shadow: 
+        -2px -2px 0 #000,  
+        2px -2px 0 #000,  
+        -2px 2px 0 #000,   
+        2px 2px 0 #000,  
+        0px 0px 10px rgba(0, 0, 0, 0.8);
+    -webkit-text-stroke: 2px black;
+}
+footer {
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.tituloAr{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;    
+}
+
+.article{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;        
+}
+.Historia{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.article:first-child{
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.article h2{
+    font-size: 25px;
+}
+
+
+
+
+.inventory {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 20px; 
+    background: rgb(245, 245, 245); 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Estilo de las tarjetas de productos */
+.product-card {
+    width: calc(20% - 20px); /* 5 tarjetas por fila, con separación entre ellas */
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;  /* Separación entre las filas */
+}
+
+/* Ajuste para pantallas más pequeñas (por ejemplo, 4 tarjetas por fila en pantallas medianas) */
+@media (max-width: 1024px) {
+    .product-card {
+        width: calc(25% - 20px);  /* 4 tarjetas por fila */
+    }
+}
+
+/* Ajuste para pantallas más pequeñas (por ejemplo, 2 tarjetas por fila en pantallas pequeñas) */
+@media (max-width: 768px) {
+    .product-card {
+        width: calc(50% - 20px);  /* 2 tarjetas por fila */
+    }
+}
+
+/* Ajuste para pantallas muy pequeñas (1 tarjeta por fila) */
+@media (max-width: 480px) {
+    .product-card {
+        width: 100%;  /* 1 tarjeta por fila */
+    }
+}
+
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1; 
+}
+
+.product-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.product-info span {
+    font-size: 12px;
+    color: #999;
+}
+
+.product-card a {
+    text-decoration: none; 
+    color: inherit; 
+}
+ .cart-window {
+        display: none;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        z-index: 9999;
+        overflow-y: auto;
+    }
+
+    .cart-window.open {
+        display: block;
+    }
+
+    .cart-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-content h2 {
+        margin-bottom: 20px;
+    }
+
+    .cart-content ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .cart-content ul li {
+        margin-bottom: 10px;
+    }
+
+    .cart-content button {
+        margin-top: 20px;
+    }
+    
+     .product-detail {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .product-detail-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+
+
+    .product-info h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+   
+
+    /* Estilo para el botón de añadir al carrito */
+    .btn-add-to-cart {
+        padding: 10px 20px;
+        font-size: 1.1em;
+        background-color: #007BFF;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-add-to-cart:hover {
+        background-color: #0056b3;
+    }
+    .btn-add-to-cart:disabled {
+    background-color: #ccc;  
+    cursor: not-allowed; 
+}
+
+    /* Estilo para el botón de volver al listado */
+    .btn-back {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #ccc;
+        color: #333;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-back:hover {
+        background-color: #999;
+    }
+    .alert {
+    color: #d9534f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el enlace de inicio de sesión */
+.btn-login {
+    background-color: #5bc0de;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-login:hover {
+    background-color: #31b0d5;
+}
+
+/* Estilo para el botón de añadir al carrito */
+.btn-add-to-cart {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #4cae4c;
+}
+
+ .producto-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .producto {
+            border: 1px solid #ddd;
+            padding: 10px;
+            width: 250px;
+            box-sizing: border-box;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        .producto img {
+            width: 100%;
+            height: auto;
+        }
+        .producto-details {
+            margin: 10px 0;
+        }
+        .producto-actions {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .producto-actions button, .producto-actions a {
+            padding: 5px 10px;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .producto-actions button.delete {
+            background-color: #f44336;
+        }
+        .producto-actions a.edit {
+            background-color: #2196F3;
+        }
+        
+        .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: #ddd;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pagination span {
+    padding: 10px;
+}
+
+
+#editar-producto form {
+    width: 80%; 
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#editar-producto input[type="text"],
+#editar-producto input[type="number"],
+#editar-producto input[type="url"] {
+    width: 100%; 
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+#editar-producto label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+
+#editar-producto input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%; 
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#editar-producto input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#editar-producto .error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+#editar-producto h2 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#editar-producto .form-group {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+     .user-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;  
+        max-width: 1200px;
+        margin: 0 auto; 
+        padding: 20px;
+        background-color: #fff; 
+        border-radius: 8px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+        .user-details-container h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .user-details-container p {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .user-details-container .user-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .user-details-container .user-info img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .user-details-container .user-info .info {
+            font-size: 1.2em;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        .user-details-container .btn {
+            padding: 12px 25px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        
+.table-container {
+    margin-top: 20px;
+    overflow-x: auto;
+    width: 100%; /* Ajusta el ancho al 100% de la página */
+    padding: 0 10px; /* Agrega un poco de padding para no pegarse a los bordes */
+}
+
+.report-table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-table th, .report-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.report-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.report-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.admin-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.admin-buttons .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-buttons .btn:hover {
+    background-color: #0056b3;
+}
+

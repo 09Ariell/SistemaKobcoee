@@ -1,0 +1,2682 @@
+26-Nov-2024 09:21:37.932 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Nov-2024 09:21:37.932 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Nov-2024 09:21:37.938 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@25ddbbbb')
+26-Nov-2024 10:39:56.259 SEVERE [http-nio-8080-exec-273] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [/acercaDe.jsp (línea: [48], columna: [1]) Archivo JSP [/componentes/aside.jsp] no encontrado] con causa raíz
+	org.apache.jasper.JasperException: /acercaDe.jsp (línea: [48], columna: [1]) Archivo JSP [/componentes/aside.jsp] no encontrado
+		at org.apache.jasper.compiler.DefaultErrorHandler.jspError(DefaultErrorHandler.java:32)
+		at org.apache.jasper.compiler.ErrorDispatcher.dispatch(ErrorDispatcher.java:299)
+		at org.apache.jasper.compiler.ErrorDispatcher.jspError(ErrorDispatcher.java:99)
+		at org.apache.jasper.compiler.Parser.processIncludeDirective(Parser.java:348)
+		at org.apache.jasper.compiler.Parser.parseIncludeDirective(Parser.java:383)
+		at org.apache.jasper.compiler.Parser.parseDirective(Parser.java:484)
+		at org.apache.jasper.compiler.Parser.parseFileDirectives(Parser.java:1725)
+		at org.apache.jasper.compiler.Parser.parse(Parser.java:132)
+		at org.apache.jasper.compiler.ParserController.doParse(ParserController.java:264)
+		at org.apache.jasper.compiler.ParserController.parseDirectives(ParserController.java:131)
+		at org.apache.jasper.compiler.Compiler.generateJava(Compiler.java:207)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:396)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 10:52:22.263 SEVERE [http-nio-8080-exec-297] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [19] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Only a type can be imported. javax.servlet.http.HttpSession resolves to a package
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved to a variable
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+42: <!-- Carrito en ventana emergente -->
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [19] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Only a type can be imported. javax.servlet.http.HttpSession resolves to a package
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved to a variable
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+42: <!-- Carrito en ventana emergente -->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 10:52:55.039 SEVERE [http-nio-8080-exec-298] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved to a variable
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+42: <!-- Carrito en ventana emergente -->
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved to a variable
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [38] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+35:     </ul>
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+
+
+Ha tenido lugar un error en la línea: [39] en el archivo jsp: [/componentes/header.jsp]
+carrito cannot be resolved
+36:     <img src="img/carrito.png" alt="Logo" class="nav-logo">
+37:     <%
+38:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+39:         List<Ropa> ropasCarrito = carrito.getRopas();
+40: %>
+41: 
+42: <!-- Carrito en ventana emergente -->
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 10:55:13.180 SEVERE [http-nio-8080-exec-305] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [391] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [392] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [391] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [392] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 10:55:27.983 SEVERE [http-nio-8080-exec-294] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [391] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [392] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [374] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [391] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [392] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:00:53.580 SEVERE [http-nio-8080-exec-319] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/detalleProducto.jsp]
+RopaManager cannot be resolved
+22:     <%
+23:         String idParam = request.getParameter("id");
+24:         int id = Integer.parseInt(idParam);
+25:         Ropa ropa = RopaManager.getProductoById(id);
+26:     %>
+27:     <div class="product-detail-container">
+28:         <div class="product-image">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/detalleProducto.jsp]
+RopaManager cannot be resolved
+22:     <%
+23:         String idParam = request.getParameter("id");
+24:         int id = Integer.parseInt(idParam);
+25:         Ropa ropa = RopaManager.getProductoById(id);
+26:     %>
+27:     <div class="product-detail-container">
+28:         <div class="product-image">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:04:55.304 SEVERE [http-nio-8080-exec-330] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/detalleProducto.jsp]
+RopaManager cannot be resolved
+22:     <%
+23:         String idParam = request.getParameter("id");
+24:         int id = Integer.parseInt(idParam);
+25:         Ropa ropa = RopaManager.getProductoById(id);
+26:     %>
+27:     <div class="product-detail-container">
+28:         <div class="product-image">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/detalleProducto.jsp]
+RopaManager cannot be resolved
+22:     <%
+23:         String idParam = request.getParameter("id");
+24:         int id = Integer.parseInt(idParam);
+25:         Ropa ropa = RopaManager.getProductoById(id);
+26:     %>
+27:     <div class="product-detail-container">
+28:         <div class="product-image">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:20:24.255 SEVERE [http-nio-8080-exec-337] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/añadirCarrito.jsp]
+The method agregarProducto(Ropa) is undefined for the type Carrito
+16: 
+17:     Ropa ropa = RopaManager.getProductoById(productoId);
+18: 
+19:     carrito.agregarProducto(ropa);
+20: 
+21:     response.sendRedirect("detalleProducto.jsp?id=" + productoId);  // Redirige a la misma pÃ¡gina de detalle
+22: %>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/añadirCarrito.jsp]
+The method agregarProducto(Ropa) is undefined for the type Carrito
+16: 
+17:     Ropa ropa = RopaManager.getProductoById(productoId);
+18: 
+19:     carrito.agregarProducto(ropa);
+20: 
+21:     response.sendRedirect("detalleProducto.jsp?id=" + productoId);  // Redirige a la misma pÃ¡gina de detalle
+22: %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:22:01.226 SEVERE [http-nio-8080-exec-350] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/añadirCarrito.jsp]
+Carrito cannot be resolved to a type
+9:     int productoId = Integer.parseInt(request.getParameter("id"));
+10: 
+11:     // Obtener el carrito de la sesión (si no existe, crearlo)
+12:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+13:     if (carrito == null) {
+14:         carrito = new Carrito(); // Si no existe, se crea un nuevo carrito
+15:         session.setAttribute("carrito", carrito);  // Guardarlo en la sesión
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/añadirCarrito.jsp]
+Carrito cannot be resolved to a type
+9:     int productoId = Integer.parseInt(request.getParameter("id"));
+10: 
+11:     // Obtener el carrito de la sesión (si no existe, crearlo)
+12:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+13:     if (carrito == null) {
+14:         carrito = new Carrito(); // Si no existe, se crea un nuevo carrito
+15:         session.setAttribute("carrito", carrito);  // Guardarlo en la sesión
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/añadirCarrito.jsp]
+Carrito cannot be resolved to a type
+11:     // Obtener el carrito de la sesión (si no existe, crearlo)
+12:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+13:     if (carrito == null) {
+14:         carrito = new Carrito(); // Si no existe, se crea un nuevo carrito
+15:         session.setAttribute("carrito", carrito);  // Guardarlo en la sesión
+16:     }
+17: 
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/añadirCarrito.jsp]
+Ropa cannot be resolved to a type
+16:     }
+17: 
+18:     // Obtener el producto usando el ID
+19:     Ropa ropa = RopaManager.getProductoById(productoId);
+20: 
+21:     // Agregar el producto al carrito
+22:     carrito.agregarProducto(ropa);
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/añadirCarrito.jsp]
+RopaManager cannot be resolved
+16:     }
+17: 
+18:     // Obtener el producto usando el ID
+19:     Ropa ropa = RopaManager.getProductoById(productoId);
+20: 
+21:     // Agregar el producto al carrito
+22:     carrito.agregarProducto(ropa);
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/añadirCarrito.jsp]
+Carrito cannot be resolved to a type
+9:     int productoId = Integer.parseInt(request.getParameter("id"));
+10: 
+11:     // Obtener el carrito de la sesión (si no existe, crearlo)
+12:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+13:     if (carrito == null) {
+14:         carrito = new Carrito(); // Si no existe, se crea un nuevo carrito
+15:         session.setAttribute("carrito", carrito);  // Guardarlo en la sesión
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/añadirCarrito.jsp]
+Carrito cannot be resolved to a type
+9:     int productoId = Integer.parseInt(request.getParameter("id"));
+10: 
+11:     // Obtener el carrito de la sesión (si no existe, crearlo)
+12:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+13:     if (carrito == null) {
+14:         carrito = new Carrito(); // Si no existe, se crea un nuevo carrito
+15:         session.setAttribute("carrito", carrito);  // Guardarlo en la sesión
+
+
+Ha tenido lugar un error en la línea: [14] en el archivo jsp: [/añadirCarrito.jsp]
+Carrito cannot be resolved to a type
+11:     // Obtener el carrito de la sesión (si no existe, crearlo)
+12:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+13:     if (carrito == null) {
+14:         carrito = new Carrito(); // Si no existe, se crea un nuevo carrito
+15:         session.setAttribute("carrito", carrito);  // Guardarlo en la sesión
+16:     }
+17: 
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/añadirCarrito.jsp]
+Ropa cannot be resolved to a type
+16:     }
+17: 
+18:     // Obtener el producto usando el ID
+19:     Ropa ropa = RopaManager.getProductoById(productoId);
+20: 
+21:     // Agregar el producto al carrito
+22:     carrito.agregarProducto(ropa);
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/añadirCarrito.jsp]
+RopaManager cannot be resolved
+16:     }
+17: 
+18:     // Obtener el producto usando el ID
+19:     Ropa ropa = RopaManager.getProductoById(productoId);
+20: 
+21:     // Agregar el producto al carrito
+22:     carrito.agregarProducto(ropa);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:26:13.320 SEVERE [http-nio-8080-exec-371] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/componentes/header.jsp]
+Syntax error on token "%", @ expected
+15:         role = currentUser.getRole();
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "?" to complete Wildcard
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ", TypeArgument1" to complete TypeArgumentList1
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/componentes/header.jsp]
+Syntax error on token "%", @ expected
+15:         role = currentUser.getRole();
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "?" to complete Wildcard
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ", TypeArgument1" to complete TypeArgumentList1
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:27:35.104 SEVERE [http-nio-8080-exec-369] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/componentes/header.jsp]
+Syntax error on token "%", @ expected
+15:         role = currentUser.getRole();
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "?" to complete Wildcard
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ", TypeArgument1" to complete TypeArgumentList1
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/componentes/header.jsp]
+Syntax error on token "%", @ expected
+15:         role = currentUser.getRole();
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "?" to complete Wildcard
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ", TypeArgument1" to complete TypeArgumentList1
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert "super ( ) ;" to complete Statement
+16:     }
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Syntax error, insert ";" to complete LocalVariableDeclarationStatement
+17: 
+18:     <% 
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:28:54.221 SEVERE [http-nio-8080-exec-376] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/componentes/header.jsp]
+DecimalFormat cannot be resolved to a type
+23:             total += ropa.getPrecio(); 
+24:         }
+25:     }
+26:     DecimalFormat df = new DecimalFormat("0.00");
+27: %>
+28: 
+29: <nav class="navbar">
+
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/componentes/header.jsp]
+DecimalFormat cannot be resolved to a type
+23:             total += ropa.getPrecio(); 
+24:         }
+25:     }
+26:     DecimalFormat df = new DecimalFormat("0.00");
+27: %>
+28: 
+29: <nav class="navbar">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/componentes/header.jsp]
+DecimalFormat cannot be resolved to a type
+23:             total += ropa.getPrecio(); 
+24:         }
+25:     }
+26:     DecimalFormat df = new DecimalFormat("0.00");
+27: %>
+28: 
+29: <nav class="navbar">
+
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/componentes/header.jsp]
+DecimalFormat cannot be resolved to a type
+23:             total += ropa.getPrecio(); 
+24:         }
+25:     }
+26:     DecimalFormat df = new DecimalFormat("0.00");
+27: %>
+28: 
+29: <nav class="navbar">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:33:12.563 SEVERE [http-nio-8080-exec-392] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/detalleProducto.jsp]
+Duplicate local variable currentUser
+21: <section id="content" class="product-detail">
+22:     <%
+23:         // Verificar si hay un usuario en sesiÃ³n
+24:         User currentUser = (User) session.getAttribute("currentUser");
+25:         
+26:         // Si no hay usuario en sesiÃ³n, redirigir al login
+27:         if (currentUser == null) {
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [24] en el archivo jsp: [/detalleProducto.jsp]
+Duplicate local variable currentUser
+21: <section id="content" class="product-detail">
+22:     <%
+23:         // Verificar si hay un usuario en sesiÃ³n
+24:         User currentUser = (User) session.getAttribute("currentUser");
+25:         
+26:         // Si no hay usuario en sesiÃ³n, redirigir al login
+27:         if (currentUser == null) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:36:53.594 SEVERE [http-nio-8080-exec-396] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable currentUser
+8: <link rel="stylesheet" type="text/css" href="css/styles.css">
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = null;
+12:     String role = "";
+13:     if(session.getAttribute("currentUser") != null) {
+14:         currentUser = (User) session.getAttribute("currentUser");
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable role
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = null;
+12:     String role = "";
+13:     if(session.getAttribute("currentUser") != null) {
+14:         currentUser = (User) session.getAttribute("currentUser");
+15:         role = currentUser.getRole();
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable carrito
+16:     }
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0; // AÃ±adir el punto y coma
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable total
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0; // AÃ±adir el punto y coma
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable df
+23:             total += ropa.getPrecio(); 
+24:         }
+25:     }
+26:     DecimalFormat df = new DecimalFormat("0.00");
+27: %>
+28: 
+29: <nav class="navbar">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable currentUser
+8: <link rel="stylesheet" type="text/css" href="css/styles.css">
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = null;
+12:     String role = "";
+13:     if(session.getAttribute("currentUser") != null) {
+14:         currentUser = (User) session.getAttribute("currentUser");
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable role
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = null;
+12:     String role = "";
+13:     if(session.getAttribute("currentUser") != null) {
+14:         currentUser = (User) session.getAttribute("currentUser");
+15:         role = currentUser.getRole();
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable carrito
+16:     }
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0; // AÃ±adir el punto y coma
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable total
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0; // AÃ±adir el punto y coma
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Ha tenido lugar un error en la línea: [26] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable df
+23:             total += ropa.getPrecio(); 
+24:         }
+25:     }
+26:     DecimalFormat df = new DecimalFormat("0.00");
+27: %>
+28: 
+29: <nav class="navbar">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:38:29.878 SEVERE [http-nio-8080-exec-407] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable currentUser
+9: <!DOCTYPE html>
+10: <%
+11:     // Verificar si hay un usuario en sesiÃ³n
+12:     User currentUser = (User) session.getAttribute("currentUser");
+13:     String role = "";
+14:     if (currentUser != null) {
+15:         role = currentUser.getRole();
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable role
+10: <%
+11:     // Verificar si hay un usuario en sesiÃ³n
+12:     User currentUser = (User) session.getAttribute("currentUser");
+13:     String role = "";
+14:     if (currentUser != null) {
+15:         role = currentUser.getRole();
+16:     }
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable carrito
+16:     }
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0;
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable total
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0;
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Ha tenido lugar un error en la línea: [28] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable df
+25:     }
+26:     
+27:     // Formatear el total con dos decimales
+28:     DecimalFormat df = new DecimalFormat("0.00");
+29: %>
+30: 
+31: <nav class="navbar">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable currentUser
+9: <!DOCTYPE html>
+10: <%
+11:     // Verificar si hay un usuario en sesiÃ³n
+12:     User currentUser = (User) session.getAttribute("currentUser");
+13:     String role = "";
+14:     if (currentUser != null) {
+15:         role = currentUser.getRole();
+
+
+Ha tenido lugar un error en la línea: [13] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable role
+10: <%
+11:     // Verificar si hay un usuario en sesiÃ³n
+12:     User currentUser = (User) session.getAttribute("currentUser");
+13:     String role = "";
+14:     if (currentUser != null) {
+15:         role = currentUser.getRole();
+16:     }
+
+
+Ha tenido lugar un error en la línea: [19] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable carrito
+16:     }
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0;
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [20] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable total
+17: 
+18:     // Obtener el carrito de la sesiÃ³n
+19:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+20:     double total = 0;
+21:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+22:         for (Ropa ropa : carrito.getRopas()) {
+23:             total += ropa.getPrecio(); 
+
+
+Ha tenido lugar un error en la línea: [28] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable df
+25:     }
+26:     
+27:     // Formatear el total con dos decimales
+28:     DecimalFormat df = new DecimalFormat("0.00");
+29: %>
+30: 
+31: <nav class="navbar">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 11:40:50.383 SEVERE [http-nio-8080-exec-422] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable currentUser
+8: <link rel="stylesheet" type="text/css" href="css/styles.css">
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = (User) session.getAttribute("currentUser");
+12:     String role = "";
+13:     if (currentUser != null) {
+14:         role = currentUser.getRole();
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable role
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = (User) session.getAttribute("currentUser");
+12:     String role = "";
+13:     if (currentUser != null) {
+14:         role = currentUser.getRole();
+15:     }
+
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable carrito
+14:         role = currentUser.getRole();
+15:     }
+16: 
+17:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+18:     double total = 0;
+19:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+20:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable total
+15:     }
+16: 
+17:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+18:     double total = 0;
+19:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+20:         for (Ropa ropa : carrito.getRopas()) {
+21:             total += ropa.getPrecio(); 
+
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable df
+22:         }
+23:     }
+24:     
+25:     DecimalFormat df = new DecimalFormat("0.00");
+26: %>
+27: 
+28: <nav class="navbar">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable currentUser
+8: <link rel="stylesheet" type="text/css" href="css/styles.css">
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = (User) session.getAttribute("currentUser");
+12:     String role = "";
+13:     if (currentUser != null) {
+14:         role = currentUser.getRole();
+
+
+Ha tenido lugar un error en la línea: [12] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable role
+9: <!DOCTYPE html>
+10: <%
+11:     User currentUser = (User) session.getAttribute("currentUser");
+12:     String role = "";
+13:     if (currentUser != null) {
+14:         role = currentUser.getRole();
+15:     }
+
+
+Ha tenido lugar un error en la línea: [17] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable carrito
+14:         role = currentUser.getRole();
+15:     }
+16: 
+17:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+18:     double total = 0;
+19:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+20:         for (Ropa ropa : carrito.getRopas()) {
+
+
+Ha tenido lugar un error en la línea: [18] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable total
+15:     }
+16: 
+17:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+18:     double total = 0;
+19:     if (carrito != null && !carrito.getRopas().isEmpty()) {
+20:         for (Ropa ropa : carrito.getRopas()) {
+21:             total += ropa.getPrecio(); 
+
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/componentes/header.jsp]
+Duplicate local variable df
+22:         }
+23:     }
+24:     
+25:     DecimalFormat df = new DecimalFormat("0.00");
+26: %>
+27: 
+28: <nav class="navbar">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 12:00:54.885 SEVERE [http-nio-8080-exec-453] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 12:01:06.528 SEVERE [http-nio-8080-exec-458] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 12:02:38.409 SEVERE [http-nio-8080-exec-459] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [15] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\acercaDe_jsp.java]
+Only a type can be imported. com.tu.paquete.Ropa resolves to a package
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [15] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\acercaDe_jsp.java]
+Only a type can be imported. com.tu.paquete.Ropa resolves to a package
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 12:49:36.423 SEVERE [http-nio-8080-exec-620] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 12:49:42.079 SEVERE [http-nio-8080-exec-613] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [49] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+46: 
+47:     <% 
+48:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+49:             List<Ropa> ropasCarrito = carrito.getRopas();
+50:     %>
+51: 
+52:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 13:44:33.375 SEVERE [http-nio-8080-exec-689] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+49: 
+50:     <% 
+51:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+52:             List<Ropa> ropasCarrito = carrito.getRopas();
+53:     %>
+54: 
+55:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+49: 
+50:     <% 
+51:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+52:             List<Ropa> ropasCarrito = carrito.getRopas();
+53:     %>
+54: 
+55:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 13:44:36.589 SEVERE [http-nio-8080-exec-693] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [org.apache.jasper.JasperException: java.lang.ClassNotFoundException: org.apache.jsp.inventario_jsp] con causa raíz
+	java.lang.ClassNotFoundException: org.apache.jsp.inventario_jsp
+		at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:104)
+		at org.apache.jasper.servlet.JasperLoader.loadClass(JasperLoader.java:51)
+		at org.apache.catalina.core.DefaultInstanceManager.newInstance(DefaultInstanceManager.java:147)
+		at org.apache.jasper.servlet.JspServletWrapper.getServlet(JspServletWrapper.java:189)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:410)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 13:45:14.785 SEVERE [http-nio-8080-exec-696] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+49: 
+50:     <% 
+51:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+52:             List<Ropa> ropasCarrito = carrito.getRopas();
+53:     %>
+54: 
+55:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+49: 
+50:     <% 
+51:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+52:             List<Ropa> ropasCarrito = carrito.getRopas();
+53:     %>
+54: 
+55:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 13:54:26.140 SEVERE [http-nio-8080-exec-730] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+49: 
+50:     <% 
+51:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+52:             List<Ropa> ropasCarrito = carrito.getRopas();
+53:     %>
+54: 
+55:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/componentes/header.jsp]
+List cannot be resolved to a type
+49: 
+50:     <% 
+51:         if (carrito != null && !carrito.getRopas().isEmpty()) {
+52:             List<Ropa> ropasCarrito = carrito.getRopas();
+53:     %>
+54: 
+55:    <div id="cartWindow" class="cart-window">
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 14:12:56.955 SEVERE [http-nio-8080-exec-800] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [385] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [385] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [402] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [403] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [385] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "else Statement" to complete IfStatement
+
+Ha tenido lugar un error en la línea: [385] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [402] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [403] en el fichero java generado: [C:\Users\labICI01\Downloads\mavenproject1\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\index_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 14:17:06.724 SEVERE [http-nio-8080-exec-809] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+Map cannot be resolved to a type
+52:                 <ul id="cartItems">
+53:                     <% 
+54:                         // Crear un mapa para contar las unidades de cada producto
+55:                         Map<Integer, Integer> productCount = new HashMap<>();
+56:                         for (Ropa ropa : carrito.getRopas()) {
+57:                             int id = ropa.getId();
+58:                             productCount.put(id, productCount.getOrDefault(id, 0) + 1);
+
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+HashMap cannot be resolved to a type
+52:                 <ul id="cartItems">
+53:                     <% 
+54:                         // Crear un mapa para contar las unidades de cada producto
+55:                         Map<Integer, Integer> productCount = new HashMap<>();
+56:                         for (Ropa ropa : carrito.getRopas()) {
+57:                             int id = ropa.getId();
+58:                             productCount.put(id, productCount.getOrDefault(id, 0) + 1);
+
+
+Ha tenido lugar un error en la línea: [62] en el archivo jsp: [/componentes/header.jsp]
+Map.Entry cannot be resolved to a type
+59:                         }
+60:                     %>
+61: 
+62:                     <% for (Map.Entry<Integer, Integer> entry : productCount.entrySet()) {
+63:                         Ropa ropa = RopaManager.getProductoById(entry.getKey()); // Obtener el producto por su ID
+64:                         int quantity = entry.getValue(); // Contar cuÃ¡ntos hay de este producto
+65:                     %>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+Map cannot be resolved to a type
+52:                 <ul id="cartItems">
+53:                     <% 
+54:                         // Crear un mapa para contar las unidades de cada producto
+55:                         Map<Integer, Integer> productCount = new HashMap<>();
+56:                         for (Ropa ropa : carrito.getRopas()) {
+57:                             int id = ropa.getId();
+58:                             productCount.put(id, productCount.getOrDefault(id, 0) + 1);
+
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+HashMap cannot be resolved to a type
+52:                 <ul id="cartItems">
+53:                     <% 
+54:                         // Crear un mapa para contar las unidades de cada producto
+55:                         Map<Integer, Integer> productCount = new HashMap<>();
+56:                         for (Ropa ropa : carrito.getRopas()) {
+57:                             int id = ropa.getId();
+58:                             productCount.put(id, productCount.getOrDefault(id, 0) + 1);
+
+
+Ha tenido lugar un error en la línea: [62] en el archivo jsp: [/componentes/header.jsp]
+Map.Entry cannot be resolved to a type
+59:                         }
+60:                     %>
+61: 
+62:                     <% for (Map.Entry<Integer, Integer> entry : productCount.entrySet()) {
+63:                         Ropa ropa = RopaManager.getProductoById(entry.getKey()); // Obtener el producto por su ID
+64:                         int quantity = entry.getValue(); // Contar cuÃ¡ntos hay de este producto
+65:                     %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 14:17:59.468 SEVERE [http-nio-8080-exec-815] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+Map cannot be resolved to a type
+52:                 <ul id="cartItems">
+53:                     <% 
+54:                         // Crear un mapa para contar las unidades de cada producto
+55:                         Map<Integer, Integer> productCount = new HashMap<>();
+56:                         for (Ropa ropa : carrito.getRopas()) {
+57:                             int id = ropa.getId();
+58:                             productCount.put(id, productCount.getOrDefault(id, 0) + 1);
+
+
+Ha tenido lugar un error en la línea: [62] en el archivo jsp: [/componentes/header.jsp]
+Map.Entry cannot be resolved to a type
+59:                         }
+60:                     %>
+61: 
+62:                     <% for (Map.Entry<Integer, Integer> entry : productCount.entrySet()) {
+63:                         Ropa ropa = RopaManager.getProductoById(entry.getKey()); // Obtener el producto por su ID
+64:                         int quantity = entry.getValue(); // Contar cuÃ¡ntos hay de este producto
+65:                     %>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+Map cannot be resolved to a type
+52:                 <ul id="cartItems">
+53:                     <% 
+54:                         // Crear un mapa para contar las unidades de cada producto
+55:                         Map<Integer, Integer> productCount = new HashMap<>();
+56:                         for (Ropa ropa : carrito.getRopas()) {
+57:                             int id = ropa.getId();
+58:                             productCount.put(id, productCount.getOrDefault(id, 0) + 1);
+
+
+Ha tenido lugar un error en la línea: [62] en el archivo jsp: [/componentes/header.jsp]
+Map.Entry cannot be resolved to a type
+59:                         }
+60:                     %>
+61: 
+62:                     <% for (Map.Entry<Integer, Integer> entry : productCount.entrySet()) {
+63:                         Ropa ropa = RopaManager.getProductoById(entry.getKey()); // Obtener el producto por su ID
+64:                         int quantity = entry.getValue(); // Contar cuÃ¡ntos hay de este producto
+65:                     %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 14:31:18.101 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+26-Nov-2024 14:31:18.101 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+26-Nov-2024 14:35:04.344 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+26-Nov-2024 14:35:04.344 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+26-Nov-2024 14:35:04.348 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@66213a0d')
+26-Nov-2024 14:35:11.420 SEVERE [http-nio-8080-exec-9] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [37] en el archivo jsp: [/componentes/header.jsp]
+role cannot be resolved to a variable
+34:         <li><a href="https://www.instagram.com/kobcoee_/">Instagram</a></li>
+35:         <li><a href="mailto:coee1x1490@gmail.com">Correo electrÃ³nico</a></li>
+36:         <li><a href="acercaDe.jsp">Acerca de</a></li>
+37:         <% if ("admin".equals(role)) { %>
+38:             <li><a href="inventario.jsp">Inventario</a></li>
+39:         <% } %>
+40:         <% if (currentUser == null) { %>
+
+
+Ha tenido lugar un error en la línea: [40] en el archivo jsp: [/componentes/header.jsp]
+currentUser cannot be resolved to a variable
+37:         <% if ("admin".equals(role)) { %>
+38:             <li><a href="inventario.jsp">Inventario</a></li>
+39:         <% } %>
+40:         <% if (currentUser == null) { %>
+41:             <li><a href="login.jsp">Iniciar SesiÃ³n</a></li>
+42:         <% } %>
+43:         <% if (currentUser != null) { %>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/componentes/header.jsp]
+currentUser cannot be resolved to a variable
+40:         <% if (currentUser == null) { %>
+41:             <li><a href="login.jsp">Iniciar SesiÃ³n</a></li>
+42:         <% } %>
+43:         <% if (currentUser != null) { %>
+44:             <li><a href="LogoutServlet">Cerrar SesiÃ³n</a></li>
+45:         <% } %>
+46:     </ul>
+
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+productCount cannot be resolved
+52:         <h2>Tu Carrito</h2>
+53:         <% if (carrito != null && !carrito.getRopas().isEmpty()) { %>
+54:             <ul id="cartItems">
+55:                 <% for (Map.Entry<Integer, Integer> entry : productCount.entrySet()) { 
+56:                     Ropa ropa = RopaManager.getProductoById(entry.getKey()); 
+57:                     int cantidad = entry.getValue();
+58:                 %>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [37] en el archivo jsp: [/componentes/header.jsp]
+role cannot be resolved to a variable
+34:         <li><a href="https://www.instagram.com/kobcoee_/">Instagram</a></li>
+35:         <li><a href="mailto:coee1x1490@gmail.com">Correo electrÃ³nico</a></li>
+36:         <li><a href="acercaDe.jsp">Acerca de</a></li>
+37:         <% if ("admin".equals(role)) { %>
+38:             <li><a href="inventario.jsp">Inventario</a></li>
+39:         <% } %>
+40:         <% if (currentUser == null) { %>
+
+
+Ha tenido lugar un error en la línea: [40] en el archivo jsp: [/componentes/header.jsp]
+currentUser cannot be resolved to a variable
+37:         <% if ("admin".equals(role)) { %>
+38:             <li><a href="inventario.jsp">Inventario</a></li>
+39:         <% } %>
+40:         <% if (currentUser == null) { %>
+41:             <li><a href="login.jsp">Iniciar SesiÃ³n</a></li>
+42:         <% } %>
+43:         <% if (currentUser != null) { %>
+
+
+Ha tenido lugar un error en la línea: [43] en el archivo jsp: [/componentes/header.jsp]
+currentUser cannot be resolved to a variable
+40:         <% if (currentUser == null) { %>
+41:             <li><a href="login.jsp">Iniciar SesiÃ³n</a></li>
+42:         <% } %>
+43:         <% if (currentUser != null) { %>
+44:             <li><a href="LogoutServlet">Cerrar SesiÃ³n</a></li>
+45:         <% } %>
+46:     </ul>
+
+
+Ha tenido lugar un error en la línea: [55] en el archivo jsp: [/componentes/header.jsp]
+productCount cannot be resolved
+52:         <h2>Tu Carrito</h2>
+53:         <% if (carrito != null && !carrito.getRopas().isEmpty()) { %>
+54:             <ul id="cartItems">
+55:                 <% for (Map.Entry<Integer, Integer> entry : productCount.entrySet()) { 
+56:                     Ropa ropa = RopaManager.getProductoById(entry.getKey()); 
+57:                     int cantidad = entry.getValue();
+58:                 %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 14:46:13.206 SEVERE [http-nio-8080-exec-29] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+Ropa cannot be resolved to a type
+8: <%@ page import="logica.Carrito" %>
+9: <% 
+10:     int productoId = Integer.parseInt(request.getParameter("id")); // Obtener el ID del producto
+11:     Ropa ropa = RopaManager.getProductoById(productoId); // Obtener el producto por ID
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+RopaManager cannot be resolved
+8: <%@ page import="logica.Carrito" %>
+9: <% 
+10:     int productoId = Integer.parseInt(request.getParameter("id")); // Obtener el ID del producto
+11:     Ropa ropa = RopaManager.getProductoById(productoId); // Obtener el producto por ID
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+Ropa cannot be resolved to a type
+8: <%@ page import="logica.Carrito" %>
+9: <% 
+10:     int productoId = Integer.parseInt(request.getParameter("id")); // Obtener el ID del producto
+11:     Ropa ropa = RopaManager.getProductoById(productoId); // Obtener el producto por ID
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+RopaManager cannot be resolved
+8: <%@ page import="logica.Carrito" %>
+9: <% 
+10:     int productoId = Integer.parseInt(request.getParameter("id")); // Obtener el ID del producto
+11:     Ropa ropa = RopaManager.getProductoById(productoId); // Obtener el producto por ID
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 14:47:02.337 SEVERE [http-nio-8080-exec-31] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+RopaManager cannot be resolved
+8: <%@ page import="logica.Carrito,logica.Ropa" %>
+9: <% 
+10:     int productoId = Integer.parseInt(request.getParameter("id")); // Obtener el ID del producto
+11:     Ropa ropa = RopaManager.getProductoById(productoId); // Obtener el producto por ID
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+RopaManager cannot be resolved
+8: <%@ page import="logica.Carrito,logica.Ropa" %>
+9: <% 
+10:     int productoId = Integer.parseInt(request.getParameter("id")); // Obtener el ID del producto
+11:     Ropa ropa = RopaManager.getProductoById(productoId); // Obtener el producto por ID
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 14:49:37.285 SEVERE [http-nio-8080-exec-57] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/detalleProducto.jsp] en línea [26]
+
+23:     <%
+24:         // Verificar si hay un usuario en sesiÃ³n
+25:         String idParam = request.getParameter("id");
+26:         int id = Integer.parseInt(idParam);
+27:         Ropa ropa = RopaManager.getProductoById(id);
+28:     %>
+29:     <div class="product-detail-container">
+
+
+Stacktrace:] con causa raíz
+	java.lang.NumberFormatException: Cannot parse null string
+		at java.base/java.lang.Integer.parseInt(Integer.java:630)
+		at java.base/java.lang.Integer.parseInt(Integer.java:786)
+		at org.apache.jsp.detalleProducto_jsp._jspService(detalleProducto_jsp.java:309)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 15:11:38.209 SEVERE [http-nio-8080-exec-76] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+Syntax error on token "/", delete this token
+8: <%@ page import="logica.Carrito,logica.Ropa,logica.RopaManager"%>
+9: <%
+10:     int productoId = Integer.parseInt(request.getParameter("id")); 
+11:     Ropa ropa = RopaManager.getProductoById(productoId); /
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [11] en el archivo jsp: [/eliminarDelCarrito.jsp]
+Syntax error on token "/", delete this token
+8: <%@ page import="logica.Carrito,logica.Ropa,logica.RopaManager"%>
+9: <%
+10:     int productoId = Integer.parseInt(request.getParameter("id")); 
+11:     Ropa ropa = RopaManager.getProductoById(productoId); /
+12:     
+13:     Carrito carrito = (Carrito) session.getAttribute("carrito");
+14:     if (carrito != null) {
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:833)
+26-Nov-2024 15:18:05.796 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+26-Nov-2024 15:18:05.796 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()

@@ -1,0 +1,1599 @@
+03-Dec-2024 09:10:33.849 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Dec-2024 09:10:33.849 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Dec-2024 09:10:33.855 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@25131637')
+03-Dec-2024 09:13:18.781 SEVERE [http-nio-8080-exec-15] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [15] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\detalleProducto_jsp.java]
+Only a type can be imported. logica.RopaManager resolves to a package
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/detalleProducto.jsp]
+Controldor cannot be resolved to a type
+22: 
+23: <section id="content" class="product-detail">
+24:     <%
+25:         Controlador controlador= new Controldor();
+26:         String idParam = request.getParameter("id");
+27:         int id = Integer.parseInt(idParam);
+28:         Ropa ropa = controlador.validarRopa(id);
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [15] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\detalleProducto_jsp.java]
+Only a type can be imported. logica.RopaManager resolves to a package
+
+Ha tenido lugar un error en la línea: [25] en el archivo jsp: [/detalleProducto.jsp]
+Controldor cannot be resolved to a type
+22: 
+23: <section id="content" class="product-detail">
+24:     <%
+25:         Controlador controlador= new Controldor();
+26:         String idParam = request.getParameter("id");
+27:         int id = Integer.parseInt(idParam);
+28:         Ropa ropa = controlador.validarRopa(id);
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 10:42:03.094 SEVERE [http-nio-8080-exec-131] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/venta.jsp]
+currentCantidad cannot be resolved to a variable
+47:                     <input 
+48:                     type="number" 
+49:                     name="cantidad_<%= ropa.getId() %>" 
+50:                     value="<%= currentCantidad %>" 
+51:                     min="1" 
+52:                     max="<%= maxStock %>" 
+53:                     onchange="actualizarCantidad('<%= ropa.getId() %>', this.value, <%= maxStock %>)"
+
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/venta.jsp]
+maxStock cannot be resolved to a variable
+49:                     name="cantidad_<%= ropa.getId() %>" 
+50:                     value="<%= currentCantidad %>" 
+51:                     min="1" 
+52:                     max="<%= maxStock %>" 
+53:                     onchange="actualizarCantidad('<%= ropa.getId() %>', this.value, <%= maxStock %>)"
+54:                     >
+55:                 </td>
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/venta.jsp]
+maxStock cannot be resolved to a variable
+50:                     value="<%= currentCantidad %>" 
+51:                     min="1" 
+52:                     max="<%= maxStock %>" 
+53:                     onchange="actualizarCantidad('<%= ropa.getId() %>', this.value, <%= maxStock %>)"
+54:                     >
+55:                 </td>
+56:                 <td>$<%= ropa.getPrecio() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [50] en el archivo jsp: [/venta.jsp]
+currentCantidad cannot be resolved to a variable
+47:                     <input 
+48:                     type="number" 
+49:                     name="cantidad_<%= ropa.getId() %>" 
+50:                     value="<%= currentCantidad %>" 
+51:                     min="1" 
+52:                     max="<%= maxStock %>" 
+53:                     onchange="actualizarCantidad('<%= ropa.getId() %>', this.value, <%= maxStock %>)"
+
+
+Ha tenido lugar un error en la línea: [52] en el archivo jsp: [/venta.jsp]
+maxStock cannot be resolved to a variable
+49:                     name="cantidad_<%= ropa.getId() %>" 
+50:                     value="<%= currentCantidad %>" 
+51:                     min="1" 
+52:                     max="<%= maxStock %>" 
+53:                     onchange="actualizarCantidad('<%= ropa.getId() %>', this.value, <%= maxStock %>)"
+54:                     >
+55:                 </td>
+
+
+Ha tenido lugar un error en la línea: [53] en el archivo jsp: [/venta.jsp]
+maxStock cannot be resolved to a variable
+50:                     value="<%= currentCantidad %>" 
+51:                     min="1" 
+52:                     max="<%= maxStock %>" 
+53:                     onchange="actualizarCantidad('<%= ropa.getId() %>', this.value, <%= maxStock %>)"
+54:                     >
+55:                 </td>
+56:                 <td>$<%= ropa.getPrecio() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 10:49:28.409 SEVERE [http-nio-8080-exec-138] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [ActualizarCarritoServlet] lanzó excepción
+	java.lang.NumberFormatException: Cannot parse null string
+		at java.base/java.lang.Integer.parseInt(Integer.java:550)
+		at java.base/java.lang.Integer.parseInt(Integer.java:685)
+		at servlets.ActualizarCarritoServlet.doPost(ActualizarCarritoServlet.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:645)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 10:49:38.167 SEVERE [http-nio-8080-exec-143] org.apache.catalina.core.StandardWrapperValve.invoke Servlet.service() para servlet [ActualizarCarritoServlet] lanzó excepción
+	java.lang.NumberFormatException: Cannot parse null string
+		at java.base/java.lang.Integer.parseInt(Integer.java:550)
+		at java.base/java.lang.Integer.parseInt(Integer.java:685)
+		at servlets.ActualizarCarritoServlet.doPost(ActualizarCarritoServlet.java:71)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:645)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 11:30:00.910 SEVERE [http-nio-8080-exec-201] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [496] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [513] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [514] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [496] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [513] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [514] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 11:31:26.856 SEVERE [http-nio-8080-exec-210] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [496] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [513] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [514] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [496] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete Block
+
+Ha tenido lugar un error en la línea: [513] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error on token "}", delete this token
+
+Ha tenido lugar un error en la línea: [514] en el fichero java generado: [C:\Users\tobar\OneDrive\Escritorio\Proyecto\apache-tomcat-11.0.1\work\Catalina\localhost\mavenproject1\org\apache\jsp\venta_jsp.java]
+Syntax error, insert "}" to complete ClassBody
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 13:15:34.037 SEVERE [http-nio-8080-exec-455] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7155] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The type [class java.util.List] for the attribute [productosVendidos] on the entity class [class logica.Venta] is not a valid type for a serialized mapping. The attribute type must implement the Serializable interface.
+		at org.eclipse.persistence.exceptions.ValidationException.invalidTypeForSerializedAttribute(ValidationException.java:1149)
+		at org.eclipse.persistence.internal.jpa.metadata.converters.SerializedMetadata.process(SerializedMetadata.java:106)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.MappingAccessor.processSerialized(MappingAccessor.java:2037)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.MappingAccessor.processMappingConverter(MappingAccessor.java:1856)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.MappingAccessor.processMappingValueConverter(MappingAccessor.java:1877)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.BasicAccessor.process(BasicAccessor.java:438)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataDescriptor.processMappingAccessors(MetadataDescriptor.java:1542)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.ClassAccessor.processMappingAccessors(ClassAccessor.java:1659)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.EntityAccessor.processMappingAccessors(EntityAccessor.java:1235)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.EntityAccessor.process(EntityAccessor.java:694)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage2(MetadataProject.java:1870)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:576)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 13:16:23.572 SEVERE [http-nio-8080-exec-446] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7155] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The type [class java.util.List] for the attribute [productosVendidos] on the entity class [class logica.Venta] is not a valid type for a serialized mapping. The attribute type must implement the Serializable interface.
+		at org.eclipse.persistence.exceptions.ValidationException.invalidTypeForSerializedAttribute(ValidationException.java:1149)
+		at org.eclipse.persistence.internal.jpa.metadata.converters.SerializedMetadata.process(SerializedMetadata.java:106)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.MappingAccessor.processSerialized(MappingAccessor.java:2037)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.MappingAccessor.processMappingConverter(MappingAccessor.java:1856)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.MappingAccessor.processMappingValueConverter(MappingAccessor.java:1877)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.BasicAccessor.process(BasicAccessor.java:438)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataDescriptor.processMappingAccessors(MetadataDescriptor.java:1542)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.ClassAccessor.processMappingAccessors(ClassAccessor.java:1659)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.EntityAccessor.processMappingAccessors(EntityAccessor.java:1235)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.classes.EntityAccessor.process(EntityAccessor.java:694)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage2(MetadataProject.java:1870)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:576)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 13:18:51.361 SEVERE [http-nio-8080-exec-464] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7250] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: [class logica.Venta] uses a non-entity [class logica.ProductoVenta] as target entity in the relationship attribute [field productosVendidos].
+		at org.eclipse.persistence.exceptions.ValidationException.nonEntityTargetInRelationship(ValidationException.java:1388)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getReferenceDescriptor(RelationshipAccessor.java:569)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:485)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:218)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:151)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1643)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1932)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 13:21:59.229 SEVERE [http-nio-8080-exec-469] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7154] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [productosVendidos] in entity class [class logica.Venta] has a mappedBy value of [venta] which does not exist in its owning entity class [class logica.ProductoVenta]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+		at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1381)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:491)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:218)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:151)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1643)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1932)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 13:22:48.524 SEVERE [http-nio-8080-exec-458] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7154] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [productosVendidos] in entity class [class logica.Venta] has a mappedBy value of [venta] which does not exist in its owning entity class [class logica.ProductoVenta]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+		at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1381)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:491)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:218)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:151)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1643)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1932)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 13:27:29.212 SEVERE [http-nio-8080-exec-477] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-0] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.IntegrityException
+Descriptor Exceptions: 
+---------------------------------------------------------
+
+Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.Venta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.Venta.<init>()
+Descriptor: RelationalDescriptor(logica.Venta --> [DatabaseTable(VENTA)])
+
+Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.ProductoVenta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.ProductoVenta.<init>()
+Descriptor: RelationalDescriptor(logica.ProductoVenta --> [DatabaseTable(PRODUCTOVENTA)])
+
+Runtime Exceptions: 
+---------------------------------------------------------
+
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:760)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:696)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:627)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:866)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:809)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:153)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+
+Descriptor Exceptions: 
+---------------------------------------------------------
+
+
+Local Exception Stack: 
+	Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.Venta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.Venta.<init>()
+Descriptor: RelationalDescriptor(logica.Venta --> [DatabaseTable(VENTA)])
+		at org.eclipse.persistence.exceptions.DescriptorException.noSuchMethodWhileInitializingInstantiationPolicy(DescriptorException.java:1211)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:239)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructor(InstantiationPolicy.java:221)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.getDefaultConstructor(InstantiationPolicy.java:212)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstanceUsingDefaultConstructor(InstantiationPolicy.java:142)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstance(InstantiationPolicy.java:115)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.selfValidationAfterInitialization(ClassDescriptor.java:4428)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.validateAfterInitialization(ClassDescriptor.java:6282)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.postInitialize(ClassDescriptor.java:4056)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:751)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:696)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:627)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:866)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:809)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:153)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+	Caused by: java.lang.NoSuchMethodException: logica.Venta.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3833)
+		at java.base/java.lang.Class.getDeclaredConstructor(Class.java:3004)
+		at org.eclipse.persistence.internal.security.PrivilegedAccessHelper.getDeclaredConstructorFor(PrivilegedAccessHelper.java:240)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:236)
+		... 51 more
+
+
+Local Exception Stack: 
+	Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.ProductoVenta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.ProductoVenta.<init>()
+Descriptor: RelationalDescriptor(logica.ProductoVenta --> [DatabaseTable(PRODUCTOVENTA)])
+		at org.eclipse.persistence.exceptions.DescriptorException.noSuchMethodWhileInitializingInstantiationPolicy(DescriptorException.java:1211)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:239)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructor(InstantiationPolicy.java:221)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.getDefaultConstructor(InstantiationPolicy.java:212)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstanceUsingDefaultConstructor(InstantiationPolicy.java:142)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstance(InstantiationPolicy.java:115)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.selfValidationAfterInitialization(ClassDescriptor.java:4428)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.validateAfterInitialization(ClassDescriptor.java:6282)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.postInitialize(ClassDescriptor.java:4056)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:751)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:696)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:627)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:866)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:809)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:153)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+	Caused by: java.lang.NoSuchMethodException: logica.ProductoVenta.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3833)
+		at java.base/java.lang.Class.getDeclaredConstructor(Class.java:3004)
+		at org.eclipse.persistence.internal.security.PrivilegedAccessHelper.getDeclaredConstructorFor(PrivilegedAccessHelper.java:240)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:236)
+		... 51 more
+
+Runtime Exceptions: 
+---------------------------------------------------------
+03-Dec-2024 13:28:41.498 SEVERE [http-nio-8080-exec-491] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-0] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.IntegrityException
+Descriptor Exceptions: 
+---------------------------------------------------------
+
+Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.ProductoVenta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.ProductoVenta.<init>()
+Descriptor: RelationalDescriptor(logica.ProductoVenta --> [DatabaseTable(PRODUCTOVENTA)])
+
+Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.Venta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.Venta.<init>()
+Descriptor: RelationalDescriptor(logica.Venta --> [DatabaseTable(VENTA)])
+
+Runtime Exceptions: 
+---------------------------------------------------------
+
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:760)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:696)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:627)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:866)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:809)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:153)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+
+Descriptor Exceptions: 
+---------------------------------------------------------
+
+
+Local Exception Stack: 
+	Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.ProductoVenta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.ProductoVenta.<init>()
+Descriptor: RelationalDescriptor(logica.ProductoVenta --> [DatabaseTable(PRODUCTOVENTA)])
+		at org.eclipse.persistence.exceptions.DescriptorException.noSuchMethodWhileInitializingInstantiationPolicy(DescriptorException.java:1211)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:239)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructor(InstantiationPolicy.java:221)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.getDefaultConstructor(InstantiationPolicy.java:212)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstanceUsingDefaultConstructor(InstantiationPolicy.java:142)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstance(InstantiationPolicy.java:115)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.selfValidationAfterInitialization(ClassDescriptor.java:4428)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.validateAfterInitialization(ClassDescriptor.java:6282)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.postInitialize(ClassDescriptor.java:4056)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:751)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:696)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:627)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:866)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:809)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:153)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+	Caused by: java.lang.NoSuchMethodException: logica.ProductoVenta.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3833)
+		at java.base/java.lang.Class.getDeclaredConstructor(Class.java:3004)
+		at org.eclipse.persistence.internal.security.PrivilegedAccessHelper.getDeclaredConstructorFor(PrivilegedAccessHelper.java:240)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:236)
+		... 51 more
+
+
+Local Exception Stack: 
+	Exception [EclipseLink-63] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.DescriptorException
+Exception Description: The instance creation method [logica.Venta.<Default Constructor>], with no parameters, does not exist, or is not accessible.
+Internal Exception: java.lang.NoSuchMethodException: logica.Venta.<init>()
+Descriptor: RelationalDescriptor(logica.Venta --> [DatabaseTable(VENTA)])
+		at org.eclipse.persistence.exceptions.DescriptorException.noSuchMethodWhileInitializingInstantiationPolicy(DescriptorException.java:1211)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:239)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructor(InstantiationPolicy.java:221)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.getDefaultConstructor(InstantiationPolicy.java:212)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstanceUsingDefaultConstructor(InstantiationPolicy.java:142)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildNewInstance(InstantiationPolicy.java:115)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.selfValidationAfterInitialization(ClassDescriptor.java:4428)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.validateAfterInitialization(ClassDescriptor.java:6282)
+		at org.eclipse.persistence.descriptors.ClassDescriptor.postInitialize(ClassDescriptor.java:4056)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:751)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:696)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.initializeDescriptors(DatabaseSessionImpl.java:627)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.postConnectDatasource(DatabaseSessionImpl.java:866)
+		at org.eclipse.persistence.internal.sessions.DatabaseSessionImpl.loginAndDetectDatasource(DatabaseSessionImpl.java:809)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryProvider.login(EntityManagerFactoryProvider.java:261)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.deploy(EntityManagerSetupImpl.java:771)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getAbstractSession(EntityManagerFactoryDelegate.java:222)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryDelegate.getDatabaseSession(EntityManagerFactoryDelegate.java:200)
+		at org.eclipse.persistence.internal.jpa.EntityManagerFactoryImpl.getDatabaseSession(EntityManagerFactoryImpl.java:542)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:153)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:19)
+		at logica.Controlador.<init>(Controlador.java:15)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:314)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+	Caused by: java.lang.NoSuchMethodException: logica.Venta.<init>()
+		at java.base/java.lang.Class.getConstructor0(Class.java:3833)
+		at java.base/java.lang.Class.getDeclaredConstructor(Class.java:3004)
+		at org.eclipse.persistence.internal.security.PrivilegedAccessHelper.getDeclaredConstructorFor(PrivilegedAccessHelper.java:240)
+		at org.eclipse.persistence.internal.descriptors.InstantiationPolicy.buildDefaultConstructorFor(InstantiationPolicy.java:236)
+		... 51 more
+
+Runtime Exceptions: 
+---------------------------------------------------------
+03-Dec-2024 13:40:46.318 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Dec-2024 13:40:46.318 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+03-Dec-2024 17:42:37.496 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Dec-2024 17:42:37.496 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Dec-2024 17:42:37.501 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@39ff4421')
+03-Dec-2024 20:29:54.643 SEVERE [http-nio-8080-exec-95] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7154] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [ventas] in entity class [class logica.ReporteSemanal] has a mappedBy value of [reporteSemanal] which does not exist in its owning entity class [class logica.Venta]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+		at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1381)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:491)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:218)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:151)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1643)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1932)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:23)
+		at logica.Controlador.<init>(Controlador.java:24)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:315)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 20:30:39.990 SEVERE [http-nio-8080-exec-102] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7154] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [ventas] in entity class [class logica.ReporteSemanal] has a mappedBy value of [reporteSemanal] which does not exist in its owning entity class [class logica.Venta]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+		at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1381)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:491)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:218)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:151)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1643)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1932)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:23)
+		at logica.Controlador.<init>(Controlador.java:24)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:315)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 20:31:48.559 SEVERE [http-nio-8080-exec-104] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7154] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [ventas] in entity class [class logica.ReporteSemanal] has a mappedBy value of [reporteSemanal] which does not exist in its owning entity class [class logica.Venta]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+		at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1381)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:491)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:218)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:151)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1643)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1932)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:23)
+		at logica.Controlador.<init>(Controlador.java:24)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:315)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 20:34:26.430 SEVERE [http-nio-8080-exec-115] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/index.jsp] en línea [23]
+
+20: <section id="content">
+21:     <div class="gallery">
+22:         <%
+23:             Controlador controlador = new Controlador();
+24:             List<Ropa> productosPagina = controlador.listaDeRopa(); // Lista obtenida del controlador
+25:             int productosPorPagina = 6;
+26:             int totalProductos = productosPagina.size(); // Cambiado de getSize() a size()
+
+
+Stacktrace:] con causa raíz
+Local Exception Stack: 
+	Exception [EclipseLink-7154] (Eclipse Persistence Services - 3.0.2.v202107160933): org.eclipse.persistence.exceptions.ValidationException
+Exception Description: The attribute [ventas] in entity class [class logica.ReporteSemanal] has a mappedBy value of [reporteSemanal] which does not exist in its owning entity class [class logica.Venta]. If the owning entity class is a @MappedSuperclass, this is invalid, and your attribute should reference the correct subclass.
+		at org.eclipse.persistence.exceptions.ValidationException.noMappedByAttributeFound(ValidationException.java:1381)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.RelationshipAccessor.getOwningMapping(RelationshipAccessor.java:491)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.processOneToManyMapping(OneToManyAccessor.java:218)
+		at org.eclipse.persistence.internal.jpa.metadata.accessors.mappings.OneToManyAccessor.process(OneToManyAccessor.java:151)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processNonOwningRelationshipAccessors(MetadataProject.java:1643)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProject.processStage3(MetadataProject.java:1932)
+		at org.eclipse.persistence.internal.jpa.metadata.MetadataProcessor.processORMMetadata(MetadataProcessor.java:580)
+		at org.eclipse.persistence.internal.jpa.deployment.PersistenceUnitProcessor.processORMetadata(PersistenceUnitProcessor.java:639)
+		at org.eclipse.persistence.internal.jpa.EntityManagerSetupImpl.predeploy(EntityManagerSetupImpl.java:2057)
+		at org.eclipse.persistence.internal.jpa.deployment.JPAInitializer.callPredeploy(JPAInitializer.java:104)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactoryImpl(PersistenceProvider.java:107)
+		at org.eclipse.persistence.jpa.PersistenceProvider.createEntityManagerFactory(PersistenceProvider.java:191)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:80)
+		at jakarta.persistence.Persistence.createEntityManagerFactory(Persistence.java:55)
+		at persistencia.RopaJpaController.<init>(RopaJpaController.java:29)
+		at persistencia.ControllerPersistencia.<init>(ControllerPersistencia.java:23)
+		at logica.Controlador.<init>(Controlador.java:24)
+		at org.apache.jsp.index_jsp._jspService(index_jsp.java:315)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 22:21:46.842 SEVERE [http-nio-8080-exec-174] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/reportes.jsp] en línea [24]
+
+21:         </tr>
+22:         <% 
+23:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+24:             for (ReporteSemanal reporte : reportes) {
+25:         %>
+26:         <tr>
+27:             <td><%= reporte.getFecha() %></td>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "reportes" is null
+		at org.apache.jsp.reportes_jsp._jspService(reportes_jsp.java:145)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 22:24:48.564 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Dec-2024 22:24:48.564 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
+03-Dec-2024 22:28:06.418 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextInitialized()
+03-Dec-2024 22:28:06.418 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextInitialized()
+03-Dec-2024 22:28:06.422 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: attributeAdded('StockTicker', 'async.Stockticker@40cd02fc')
+03-Dec-2024 22:34:12.045 SEVERE [http-nio-8080-exec-17] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+List cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+ReporteSemanal cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+List cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+ReporteSemanal cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [22] en el archivo jsp: [/reportes.jsp]
+ReporteSemanal cannot be resolved to a type
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+25:             <td><%= reporte.getFecha() %></td>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+List cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+ReporteSemanal cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+List cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [21] en el archivo jsp: [/reportes.jsp]
+ReporteSemanal cannot be resolved to a type
+18:             <th>Acción</th>
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+
+
+Ha tenido lugar un error en la línea: [22] en el archivo jsp: [/reportes.jsp]
+ReporteSemanal cannot be resolved to a type
+19:         </tr>
+20:         <% 
+21:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+22:             for (ReporteSemanal reporte : reportes) {
+23:         %>
+24:         <tr>
+25:             <td><%= reporte.getFecha() %></td>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 22:34:47.146 SEVERE [http-nio-8080-exec-21] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [Ha sucedido una excepción al procesar la página JSP [/reportes.jsp] en línea [24]
+
+21:         </tr>
+22:         <% 
+23:             List<ReporteSemanal> reportes = (List<ReporteSemanal>) request.getAttribute("reportes");
+24:             for (ReporteSemanal reporte : reportes) {
+25:         %>
+26:         <tr>
+27:             <td><%= reporte.getFecha() %></td>
+
+
+Stacktrace:] con causa raíz
+	java.lang.NullPointerException: Cannot invoke "java.util.List.iterator()" because "reportes" is null
+		at org.apache.jsp.reportes_jsp._jspService(reportes_jsp.java:145)
+		at org.apache.jasper.runtime.HttpJspBase.service(HttpJspBase.java:67)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:456)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 23:20:18.922 SEVERE [http-nio-8080-exec-110] org.apache.catalina.core.StandardWrapperValve.invoke El Servlet.service() para el servlet [jsp] en el contexto con ruta [/mavenproject1] lanzó la excepción [No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/detalleReporte.jsp]
+The method obtenerReportePorId(String) is undefined for the type Controlador
+20:         
+21:         // Obtener el reporte específico desde el controlador
+22:         Controlador controlador = new Controlador();
+23:         ReporteSemanal reporte = controlador.obtenerReportePorId(idReporte); // Método en tu controlador
+24:         
+25:         if (reporte != null) {
+26:     %>
+
+
+Stacktrace:] con causa raíz
+	org.apache.jasper.JasperException: No se puede compilar la clase para JSP: 
+
+Ha tenido lugar un error en la línea: [23] en el archivo jsp: [/detalleReporte.jsp]
+The method obtenerReportePorId(String) is undefined for the type Controlador
+20:         
+21:         // Obtener el reporte específico desde el controlador
+22:         Controlador controlador = new Controlador();
+23:         ReporteSemanal reporte = controlador.obtenerReportePorId(idReporte); // Método en tu controlador
+24:         
+25:         if (reporte != null) {
+26:     %>
+
+
+Stacktrace:
+		at org.apache.jasper.compiler.DefaultErrorHandler.javacError(DefaultErrorHandler.java:81)
+		at org.apache.jasper.compiler.ErrorDispatcher.javacError(ErrorDispatcher.java:214)
+		at org.apache.jasper.compiler.JDTCompiler.generateClass(JDTCompiler.java:525)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:402)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:372)
+		at org.apache.jasper.compiler.Compiler.compile(Compiler.java:356)
+		at org.apache.jasper.JspCompilationContext.compile(JspCompilationContext.java:602)
+		at org.apache.jasper.servlet.JspServletWrapper.service(JspServletWrapper.java:396)
+		at org.apache.jasper.servlet.JspServlet.serviceJspFile(JspServlet.java:354)
+		at org.apache.jasper.servlet.JspServlet.service(JspServlet.java:302)
+		at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:716)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:130)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:109)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:79)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+		at org.apache.catalina.valves.AbstractAccessLogValve.invoke(AbstractAccessLogValve.java:663)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:395)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1746)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+		at java.base/java.lang.Thread.run(Thread.java:1575)
+03-Dec-2024 23:22:37.191 INFO [main] org.apache.catalina.core.ApplicationContext.log SessionListener: contextDestroyed()
+03-Dec-2024 23:22:37.191 INFO [main] org.apache.catalina.core.ApplicationContext.log ContextListener: contextDestroyed()
