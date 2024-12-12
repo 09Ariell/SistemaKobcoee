@@ -41,6 +41,7 @@ Configure la base de datos importando el archivo kobcoee.sql.
 Ajuste los archivos de configuración del proyecto para conectar con su base de datos.
 Inicie el servidor de aplicación (Tomcat o similar).
 Acceda a la aplicación a través del navegador.
+Las versiones de mysql-connector y tomcat se encuentran en el proyecto
 
 ## Uso
 Inicie sesión con las credenciales proporcionadas.
