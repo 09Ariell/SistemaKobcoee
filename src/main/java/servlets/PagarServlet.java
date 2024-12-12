@@ -5,10 +5,12 @@
 package servlets;
 
 import com.itextpdf.text.Document;
+import com.itextpdf.text.Element;
 import com.itextpdf.text.FontFactory;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.itextpdf.text.pdf.draw.LineSeparator;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
@@ -91,47 +93,73 @@ public class PagarServlet extends HttpServlet {
     }
 
     private void generarBoletaPDF(Carrito carrito, User usuario, HttpServletResponse response) throws Exception {
-    Document document = new Document();
-    String pdfPath = getServletContext().getRealPath("/") + "boleta_venta.pdf";
-    PdfWriter.getInstance(document, new java.io.FileOutputStream(pdfPath));
-    document.open();
-    
-    Locale locale = new Locale("es", "ES");
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy", locale);
-    String currentDate = sdf.format(new Date());
-    
-    document.add(new Paragraph("BOLETA DE VENTA", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 16)));
-    document.add(new Paragraph("Fecha: " + currentDate, FontFactory.getFont(FontFactory.HELVETICA, 12)));
-    document.add(new Paragraph("Nombre: " + usuario.getName(), FontFactory.getFont(FontFactory.HELVETICA, 12)));
-    document.add(new Paragraph("Correo: " + usuario.getEmail(), FontFactory.getFont(FontFactory.HELVETICA, 12)));
-    document.add(new Paragraph("Teléfono: " + usuario.getPhoneNumber(), FontFactory.getFont(FontFactory.HELVETICA, 12)));
-    document.add(new Paragraph("\nDetalles de la Compra:\n"));
-    document.add(new Paragraph("\n"));
-    PdfPTable table = new PdfPTable(4); 
-    table.addCell("Producto");
-    table.addCell("Cantidad");
-    table.addCell("Precio Unitario");
-    table.addCell("Subtotal");
+        Document document = new Document();
+        String pdfPath = getServletContext().getRealPath("/") + "boleta_venta.pdf";
+        PdfWriter.getInstance(document, new java.io.FileOutputStream(pdfPath));
+        document.open();
 
-    double totalf = 0;
-    for (Map.Entry<Ropa, Integer> entry : carrito.getRopas().entrySet()) {
-        Ropa ropa = entry.getKey();
-        int cantidad = entry.getValue();
-        double subtotal = ropa.getPrecio() * cantidad;
-        totalf += subtotal;
-        
- 
-        table.addCell(ropa.getNombre());
-        table.addCell(String.valueOf(cantidad));
-        table.addCell(String.format("$%.2f", ropa.getPrecio()));
-        table.addCell(String.format("$%.2f", subtotal));
-       
+        Locale locale = new Locale("es", "ES");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yy", locale);
+        String currentDate = sdf.format(new Date());
+
+        Paragraph header = new Paragraph("BOLETA DE VENTA", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 20));
+        header.setAlignment(Element.ALIGN_CENTER);
+        document.add(header);
+        document.add(new Paragraph("\n"));
+
+        Paragraph clienteInfo = new Paragraph(
+            "Fecha: " + currentDate + "\n" +
+            "Vendedor: " + usuario.getName() + "\n" +
+            "Correo: " + usuario.getEmail() + "\n" +
+            "Teléfono: " + usuario.getPhoneNumber() + "\n",
+            FontFactory.getFont(FontFactory.HELVETICA, 12)
+        );
+        clienteInfo.setSpacingAfter(10);
+        document.add(clienteInfo);
+
+        LineSeparator separator = new LineSeparator();
+        separator.setLineWidth(1f);
+        document.add(separator);
+        document.add(new Paragraph("\n"));
+
+        Paragraph detallesHeader = new Paragraph("Detalles de la Compra", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14));
+        detallesHeader.setSpacingAfter(10);
+        document.add(detallesHeader);
+
+        double totalf = 0;
+        for (Map.Entry<Ropa, Integer> entry : carrito.getRopas().entrySet()) {
+            Ropa ropa = entry.getKey();
+            int cantidad = entry.getValue();
+            double subtotal = ropa.getPrecio() * cantidad;
+            totalf += subtotal;
+
+            Paragraph productoFicha = new Paragraph(
+                ropa.getNombre() + "\n" +
+                "Cantidad: " + cantidad + "\n" +
+                "Precio Unitario: $" + String.format("%.2f", ropa.getPrecio()) + "\n" +
+                "Subtotal: $" + String.format("%.2f", subtotal),
+                FontFactory.getFont(FontFactory.HELVETICA, 12)
+            );
+            productoFicha.setSpacingAfter(10);
+            productoFicha.setIndentationLeft(20);
+            productoFicha.setIndentationRight(20);
+            productoFicha.setLeading(1.5f, 1.5f); 
+            document.add(productoFicha);
+
+            document.add(new LineSeparator());
+            document.add(new Paragraph("\n"));
+        }
+
+
+        Paragraph total = new Paragraph("Total: $" + String.format("%.2f", totalf),
+            FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14));
+        total.setAlignment(Element.ALIGN_RIGHT);
+        total.setSpacingBefore(20);
+        document.add(total);
+
+        document.close();
     }
 
-    document.add(table);
-    document.add(new Paragraph("\nTotal: $" + String.format("%.2f", totalf), FontFactory.getFont(FontFactory.HELVETICA_BOLD, 14)));
-    document.close();
-}
 
     private void actualizarInventario(Carrito carrito) {
         for (Map.Entry<Ropa, Integer> entry : carrito.getRopas().entrySet()) {

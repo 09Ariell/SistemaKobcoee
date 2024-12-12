@@ -17,9 +17,9 @@ import logica.Controlador;
  *
  * @author tobar
  */
-@WebServlet(name = "RegistrarUsuarioServlet", urlPatterns = {"/RegistrarUsuarioServlet"})
-public class RegistrarUsuarioServlet extends HttpServlet {
-    Controlador controlador=new Controlador();
+@WebServlet(name = "GenerarReporteMensualServlet", urlPatterns = {"/GenerarReporteMensualServlet"})
+public class GenerarReporteMensualServlet extends HttpServlet {
+    Controlador controlador = new Controlador();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -32,7 +32,7 @@ public class RegistrarUsuarioServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        
+
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
@@ -61,12 +61,9 @@ public class RegistrarUsuarioServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String nombreusuario=request.getParameter("name");
-        String contraseña=request.getParameter("password");
-        String email=request.getParameter("email");
-        String numero=request.getParameter("phoneNumber");
-        controlador.crearUsuario(nombreusuario, contraseña, "cliente", numero, email);
-        response.sendRedirect("index.jsp");
+        processRequest(request, response);
+        controlador.generarReporteMensual(); 
+        response.sendRedirect("GenerarReporteServlet");
     }
 
     /**

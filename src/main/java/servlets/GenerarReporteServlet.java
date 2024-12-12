@@ -57,9 +57,6 @@ public class GenerarReporteServlet extends HttpServlet {
             String fechaFormateada = sdf.format(reporte.getFecha());
             fechas.add(fechaFormateada);
         }
-        if(LocalDateTime.now().getDayOfWeek()==DayOfWeek.SUNDAY){
-            controlador.generarReporte();
-        }
         request.setAttribute("reportes", reportes);
         request.setAttribute("fechasFormateadas", fechas);
 
@@ -69,8 +66,8 @@ public class GenerarReporteServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     String accion = request.getParameter("accion");
 
-    if ("generarReporte".equals(accion)) {
-        controlador.generarReporte();  
+    if ("generarReporteSemanal".equals(accion)) {
+        controlador.generarReporte();
     }
     response.sendRedirect("GenerarReporteServlet");
     }
