@@ -9,7 +9,7 @@
 <%@page import="logica.Ropa"%>
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-
+<link rel="stylesheet" href="css/styles.css?v=6">
 <%@ include file="/componentes/head.jsp" %>
 <%@ include file="/componentes/headerContent.jsp" %>
 <%@ include file="/componentes/header.jsp" %>
@@ -33,8 +33,8 @@
             <img src="<%= ropa.getImagen() %>" alt="<%= ropa.getNombre() %>" class="detail-img">
         </div>
         <div class="product-info">
-            <h2><%= ropa.getNombre() %></h2>
-            <p><strong>Descripción:</strong> <%= ropa.getDescripcion() %></p>
+            <h2 class="product-name"><%= ropa.getNombre() %></h2>
+            <p class="product-description"> <%= ropa.getDescripcion() %></p>
             <p><strong>Tipo:</strong> <%= ropa.getTipo() %></p>
             <p><strong>Color:</strong> <%= ropa.getColor() %></p>
             <p><strong>Talla:</strong> <%= ropa.getTalla() %></p>

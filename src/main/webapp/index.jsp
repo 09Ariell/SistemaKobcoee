@@ -9,7 +9,7 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ include file="/componentes/headerContent.jsp" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=2">
 
 <%@ include file="/componentes/head.jsp" %>
 <%@ include file="/componentes/header.jsp" %>
@@ -20,7 +20,7 @@
         <%
             Controlador controlador = new Controlador();
             List<Ropa> productosPagina = controlador.listaDeRopa(); 
-            int productosPorPagina = 6;
+            int productosPorPagina = 10;
             int totalProductos = productosPagina.size(); 
 
             int paginaActual = 1;
@@ -44,7 +44,10 @@
                     <img src="<%= ropa.getImagen() %>" alt="<%= ropa.getNombre() %>" class="product-img"/>
                     <div class="product-info">
                         <h3><%= ropa.getNombre() %></h3>
-                        <p>$<%= ropa.getPrecio() %></p>
+                        <p>Talla: <%= ropa.getTalla() %></p>
+                        <p>Color: <%= ropa.getColor() %></p>
+                        <p>Stock: <%= ropa.getStock() %></p>
+                        <p>Precio Unitario: $<%= ropa.getPrecio() %></p>
                     </div>
                 </a>
             </div>

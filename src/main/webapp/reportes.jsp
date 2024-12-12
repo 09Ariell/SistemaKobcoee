@@ -8,21 +8,42 @@
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
 <%@ include file="/componentes/headerContent.jsp" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-
-<!DOCTYPE html>
+<link rel="stylesheet" href="css/styles.css">
 <html lang="es">
 <head>
     <title>Reportes Semanales</title>
-    <style>
+    <style> 
+        .custom-button {
+            background-color: #333; 
+            color: #fff; 
+            border: 1px solid #444; 
+            border-radius: 5px;
+            padding: 10px 20px; 
+            font-size: 16px;
+            cursor: pointer; 
+            text-align: center; 
+            transition: background-color 0.3s ease, transform 0.2s ease; 
+            margin: 10px 0; 
+            display: block; 
+        }
+
+        .custom-button:hover {
+            background-color: #555; 
+            transform: scale(1.05); 
+        }
+
+        .custom-button:active {
+            background-color: #222; 
+            transform: scale(0.95); 
+        }
 
         .main-content {
-            flex: 1; /* Esto asegura que el contenido principal ocupe el espacio disponible */
+            flex: 1; 
             padding: 20px;
             overflow: auto;
         }
 
 
-        /* Opcional: Ajustes de estilo para la tabla */
         table {
             width: 100%;
             border-collapse: collapse;
@@ -39,7 +60,7 @@
             background-color: #f4f4f4;
         }
 
-        /* Clearfix para el footer */
+       
         .clearfix::after {
             content: "";
             clear: both;
@@ -50,7 +71,6 @@
 </head>
 <body>
     <%@ include file="/componentes/head.jsp" %>
-
     <%@ include file="/componentes/header.jsp" %>
 
     <div class="main-content">
@@ -90,13 +110,18 @@
                 </c:otherwise>
             </c:choose>
         </table>
+        <form action="GenerarReporteDiarioServlet" method="POST">
+            <button type="submit" class="custom-button">Generar Reporte Diario</button>
+        </form>
 
         <form action="GenerarReporteServlet" method="POST">
-            <input type="hidden" name="accion" value="generarReporte">
-            <button type="submit">Generar Reporte Semanal</button>
+            <input type="hidden" name="accion" value="generarReporteSemanal">
+            <button type="submit" class="custom-button">Generar Reporte Semanal</button>
         </form>
-    </div>
 
+        <form action="GenerarReporteMensualServlet" method="POST">
+            <button type="submit" class="custom-button">Generar Reporte Mensual</button>
+        </form>
 
     <div class="clearfix"></div>
 

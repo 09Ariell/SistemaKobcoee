@@ -22,7 +22,6 @@
             </div>
             <button type="submit" class="btn-submit">Ingresar</button>
         </form>
-        <p class="register-link">¿No tienes una cuenta? <a href="registro.jsp">Regístrate aquí</a></p>
     </div>
     <div class="login-container">
     <button class="btn-submit" onclick="window.location.href='index.jsp'">Volver al Inicio</button>

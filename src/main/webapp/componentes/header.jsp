@@ -6,7 +6,7 @@
 <%@page import="logica.Carrito"%>
 <%@ page import="logica.User, logica.Ropa, java.text.DecimalFormat, java.util.HashMap, java.util.Map" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link rel="stylesheet" href="css/styles.css?v=3">
 <%
     User currentUser = (User) session.getAttribute("currentUser");
     String role = "";
@@ -26,10 +26,10 @@
 <nav class="navbar">
     <ul class="nav-menu">
         <li><a href="index.jsp">Inicio</a></li>
-        <li><a href="https://www.instagram.com/kobcoee_/">Instagram</a></li>
+        <li><a href="https://www.instagram.com/kobcoee_/" class="instagram" target="_blank">Instagram</a></li>
         <li><a href="mailto:coee1x1490@gmail.com">Correo electrónico</a></li>
         <li><a href="acercaDe.jsp">Acerca de</a></li>
-           
+
         <% if (currentUser == null) { %>
             <li><a href="login.jsp">Iniciar Sesión</a></li>
         <% } %>
@@ -72,8 +72,10 @@
             <% } else { %>
                 <p>Tu carrito está vacío.</p>
             <% } %>
-            <button onclick="window.location.href='venta.jsp'">Ir a Comprar</button>
-            <button id="cerrarCarrito" onclick="toggleCart()">Cerrar</button>
+            <div class="cart-buttons">
+                <button onclick="window.location.href='venta.jsp'">Ir a Comprar</button>
+                <button id="cerrarCarrito" onclick="toggleCart()">Cerrar</button>
+            </div>
         </div>
     </div>
 </nav>
